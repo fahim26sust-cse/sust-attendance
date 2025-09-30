@@ -1,0 +1,52 @@
+.shiny-text {
+  color: #ff06c1a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(236, 20, 20, 0.959) 40%,
+    rgb(2, 255, 87) 50%,
+    rgba(0, 67, 250, 0.993) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 10s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+/* Responsive font sizes */
+@media (max-width: 1200px) {
+  .shiny-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .shiny-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shiny-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shiny-text {
+    font-size: 15px;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
