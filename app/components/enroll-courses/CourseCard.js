@@ -11,7 +11,7 @@ export default function CourseCard({ course, semester, onEnroll }) {
       <CardContent sx={{ p: 1 }}>
         <Box sx={{ display: 'flex', alignItems: 'left', flexWrap: 'wrap', gap: 1, mb: 1 }}>
           <Pill size="small" label={course?.department || 'Dept'} />
-          {semester ? <Pill size="small" label={`${semester}`} /> : null}
+          {course.semester ? <Pill size="small" label={`${course.semester}`} /> : null}
         </Box>
 
         {course ? <Pill size="small" label={course.courseCode || ''} /> : null}
