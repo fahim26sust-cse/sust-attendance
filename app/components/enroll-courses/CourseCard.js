@@ -30,6 +30,11 @@ export default function CourseCard({ course, semester, onEnroll }) {
       <CardActions sx={{ p: 1, pt: 0, justifyContent: 'space-between' }}>
         <EnrollButton
           variant="outlined"
+          sx={{
+            "& .MuiButton-endIcon > svg": {
+              fontSize: { xs: 12, sm: 15, md: 20, lg: 25, xl:30 },
+            },
+          }}
           endIcon={<SendIcon />}
           onClick={() => onEnroll(course)}
         >

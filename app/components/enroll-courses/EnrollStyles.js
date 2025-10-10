@@ -65,6 +65,7 @@ export const EnrollButton = styled(Button)(({ theme }) => ({
     padding: '4px 4px',
     fontWeight: 500,
     width: '40%',
+    borderRadius: 8,
   },
   [theme.breakpoints.down('xs')]: {
     padding: '10px 18px',
